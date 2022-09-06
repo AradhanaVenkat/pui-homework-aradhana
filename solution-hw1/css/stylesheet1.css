@@ -25,6 +25,11 @@ hr{
     text-decoration: none;
 }
 
+.link3{
+    color: black;
+    text-decoration: none;
+}
+
 /* CSS for the heading */
 .heading{
     font-family: 'Franklin Gothic Medium', sans-serif;

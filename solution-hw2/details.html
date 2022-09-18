@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Document title -->
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../solution-hw2/CSS/stylesheet2.css">
+    <title>Bun Bun Bake Shop</title>
+  </head>
+ 
+  <!-- Document body -->
+  <body>
+
+    <!-- Page header - logo, nav bar  -->
+    <section class="flexbox1">
+        <div class="logo">
+          <a href="../solution-hw2/index.html">
+            <img src="../solution-hw2/HW1/logo/logo-01.svg" alt="bun bun logo">
+          </a>
+        </div>
+
+      <!-- Page navigation buttons and page header -->
+      <div class="flexbox2">
+        <nav class="flexbox3">
+          <button class="navigation" id="selected">PRODUCTS</button>
+          <button class="navigation" onclick="window.location.href='../solution-hw2/cart.html'" id="link2">CART</button>
+        </nav>
+
+        <!-- Page Header -->
+        <hr class="line">
+        <h1 class="header1">Original cinnamon roll</h1>
+      </div>
+    </section>
+
+    <!-- Cinnamon roll image and details -->
+    <div class="flexbox4">
+        <img src="../solution-hw2/HW1/products/original-cinnamon-roll.jpg" class="cinnamonroll"  alt="Original cinnamon roll">
+
+        <!-- Cinnamon roll options and details -->
+        <div class="flexbox5">
+            <p class="description"  id="margin">Customize our delicious, hand-made cinnamon roll to your liking!</p>
+
+            <!-- Dropdown for glazing options -->
+            <label class="description">Glazing:</label>
+            <select name="glazingoptions" class="dropdown" id="margin2">
+              <option value="Original">Keep Original</option>
+              <option value="Sugarmilk">Sugar Milk</option>
+              <option value="Vanillamilk">Vanilla milk</option>
+              <option value="Doublechocolate">Double chocolate</option>
+            </select>
+
+            <!-- Dropdown for pack size options -->
+            <label class="description">Pack size:</label>
+            <select name="packsize" class="dropdown" id="margin3">
+              <option value="one">1</option>
+              <option value="three">3</option>
+              <option value="six">6</option>
+              <option value="twelve">12</option>
+            </select>
+
+            <!-- Total price and add to cart button -->
+            <div class="flexbox6">
+                <p id="amounttext">$ 2.49</p>
+                <button id="addtocart" type="button">Add to Cart</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+  </body>
+</html>

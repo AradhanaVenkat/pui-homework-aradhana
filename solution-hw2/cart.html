@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Document title -->
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../solution-hw2/CSS/stylesheet3.css">
+    <title>Bun Bun Bake Shop</title>
+  </head>
+ 
+  <!-- Document body -->
+  <body>
+
+    <!-- Page header - logo, nav bar  -->
+    <div class="flexbox1">
+        <div class="logo">
+          <a href="../solution-hw2/index.html">
+            <img src="../solution-hw2/HW1/logo/logo-01.svg" alt="bun bun logo">
+          </a>
+        </div>
+
+      <!-- Page navigation buttons and page header -->
+      <div class="flexbox2">
+        <nav class="flexbox3">
+          <button class="navigation" onclick="window.location.href='../solution-hw2/index.html'" id="link2">PRODUCTS</button>
+          <button class="navigation" id="selected">CART</button>
+        </nav>
+
+        <!-- Page Header -->
+        <hr class="line">
+        <h1 class="header1">Shopping cart</h1>
+      </div>
+    </div>
+
+    <!-- Cart details and total -->
+    <div class="flexbox4">
+
+        <!-- Empty div for left of screen -->
+        <div class="flexbox5">
+        </div>
+
+        <!-- Cart details on right of screen-->
+        <div class="flexbox6">
+            
+            <!-- Cart items -->
+            <div class="flexbox9">
+
+                 <!-- item 1-->
+                 <div class="flexbox9">
+
+                    <!-- image,price and description -->
+                    <div class="flexbox7">
+                        
+                        <img src="../solution-hw2/HW1/products/original-cinnamon-roll.jpg" class="itemimage" alt="Original cinnamon roll">
+                        
+                        <div>
+                            <p class="itemdetails">
+                              Original Cinnamon Roll <br>
+                              Glazing: Keep original <br>
+                              Pack Size: 1
+                            </p>
+                        </div>
+
+                        <div class="flexbox8">
+                            <p class="price"> $2.49</p>
+                        </div>
+
+                    </div>
+
+                     <!-- remove button -->
+                    <div>
+                        <p class="remove">Remove</p>
+                    </div>
+                 </div>
+
+
+                <!-- item 2-->
+                 <div class="flexbox9" id="spacing">
+
+                    <!-- image,price and description -->
+                    <div class="flexbox7">
+                        
+                        <img src="../solution-hw2/HW1/products/double-chocolate-cinnamon-roll.jpg" class="itemimage" alt="Double Chocolate cinnamon roll">
+                        
+                        <div>
+                            <p class="itemdetails">
+                              Double Chocolate Cinnamon Roll <br>
+                              Glazing: Sugar milk <br>
+                              Pack Size: 6
+                            </p>
+                        </div>
+
+                        <div class="flexbox8">
+                            <p class="price"> $27.45</p>
+                        </div>
+
+                    </div>
+
+                     <!-- remove button -->
+                    <div>
+                        <p class="remove">Remove</p>
+                    </div>
+
+                 </div>
+            </div>
+
+            <!-- Line -->
+            <hr class="line">
+
+            <!-- Total Price -->
+            <div class="flexbox12">
+
+                <div class="flexbox10">
+                    <p class="price"> Total</p>
+                </div>
+
+                <div class="flexbox11">
+                    <p class="price">$29.94</p>
+                </div>
+            </div>
+
+            <!-- button checkout -->
+            <div class="flexbox13">
+                <button id="checkout" type="button">Checkout</button>
+            </div>
+
+        </div>
+        
+    </div>
+
+   </body>
+</html>
+

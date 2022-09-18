@@ -1,0 +1,218 @@
+/* CSS for flexbox 1 for top bar or section*/
+.flexbox1{
+    display: flex;
+}
+
+/* CSS for bun bun shop logo */
+.logo{
+    flex: 0 1 auto;
+    width: 450px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+/* CSS for flexbox 2 for header + navigation */
+ 
+.flexbox2{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+/* CSS for flexbox 3 for navigation buttons */
+
+.flexbox3{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    width: 500px;
+}
+
+/* CSS for nav buttons */
+
+.navigation{
+    font-family:'Franklin Gothic',sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 28px;
+    background-color: white;
+    color: black;
+    border: none;
+    margin-left: 70px;
+    text-decoration: none;
+}
+
+/* .navigation:hover{
+    background-color: #FFFF00;
+    font-weight: 600;
+} */
+
+#selected{
+    background-color: #FFFF00;
+    font-weight: 600; 
+}
+
+#link2{
+    text-decoration: none;
+    color: black;
+}
+
+/* CSS for line */
+
+.line{
+    border: 3px solid black;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+/* CSS for heading */
+
+.header1{
+    margin-top: 20px;
+    font-family:'Franklin Gothic',sans-serif;
+    font-weight: 200;
+    font-size: 36px;
+    margin-top: 60px;
+}
+
+/* CSS for flexbox 4 containing cart details */
+
+.flexbox4{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* CSS for empty div of left side of screen */
+
+.flexbox5{
+    display:flex;
+    width:450px;
+    flex: 0 1 auto;
+}
+
+/* CSS for flexbox6 with cart details */
+
+.flexbox6{
+    display: flex;
+    align-items: stretch;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* CSS for item image */
+
+.itemimage{
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    margin-right: 30px;
+}
+
+/* CSS for flexbox7 */
+.flexbox7{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+/* CSS for item details */
+
+.itemdetails{
+    font-family:'Franklin Gothic',sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* CSS for item price */
+
+.price{
+    font-family:'Franklin Gothic',sans-serif;
+    font-weight: 300;
+    font-size: 27px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* CSS for flexbox8 containing price */
+
+.flexbox8{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: end;
+    padding-right: 70px;
+}
+
+/* CSS for flexbox 9 containing cart items */
+
+.flexbox9{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#spacing{
+    margin-top: 20px;
+}
+
+/* CSS for remove */
+.remove{
+    font-family:'Franklin Gothic',sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/* CSS for flexbox11 with the word total */
+.flexbox10{
+    display: flex;
+    justify-content: end;
+    flex: 0 1 auto;
+    width: 250px;
+}
+
+/* CSS for flexbox11 with total price */
+.flexbox11{
+    display: flex;
+    justify-content: end;
+    flex: 1 0 auto;
+    margin-right: 70px;
+}
+
+/* CSS for flexbox12 */
+.flexbox12{
+    display: flex;
+}
+
+/* CSS for checkout button */
+#checkout{
+    border: 3px black solid;
+    background-color:#FFFF00;
+    text-align: center;
+    font-family:'Franklin Gothic',sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 22px;
+    cursor: pointer;
+    height: 60px;
+    margin-right: 70px;
+    width: 200px;
+    justify-items: flex-end;
+    margin-left: 466px;
+}
+
+/* CSS for flexbox13 */
+.flexbox13{
+    display: flex;
+    align-items: stretch;
+    justify-items: flex-end;
+    margin-top: 40px;
+}
+

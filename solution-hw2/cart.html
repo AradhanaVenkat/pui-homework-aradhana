@@ -4,7 +4,7 @@
 <!-- Document title -->
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../solution-hw2/CSS/stylesheet3.css">
+    <link rel="stylesheet" href="../solution-hw2/CSS/stylesheet1.css">
     <title>Bun Bun Bake Shop</title>
   </head>
  
@@ -33,35 +33,33 @@
     </div>
 
     <!-- Cart details and total -->
-    <div class="flexbox4">
+    <div class="flexboxcart">
 
         <!-- Empty div for left of screen -->
-        <div class="flexbox5">
+        <div class="flexboxempty">
         </div>
 
         <!-- Cart details on right of screen-->
-        <div class="flexbox6">
+        <div class="flexboxcartdetails">
             
             <!-- Cart items -->
-            <div class="flexbox9">
+            <div class="flexboxcartitems">
 
                  <!-- item 1-->
-                 <div class="flexbox9">
+                 <div class="flexboxcartitems">
 
                     <!-- image,price and description -->
-                    <div class="flexbox7">
+                    <div class="flexboxitemdetails">
                         
                         <img src="../solution-hw2/HW1/products/original-cinnamon-roll.jpg" class="itemimage" alt="Original cinnamon roll">
                         
                         <div>
-                            <p class="itemdetails">
-                              Original Cinnamon Roll <br>
-                              Glazing: Keep original <br>
-                              Pack Size: 1
-                            </p>
+                             <p class="itemdetails" id="name"> Original Cinnamon Roll </p>
+                             <p class="itemdetails"> Glazing: Keep original </p>
+                             <p class="itemdetails" id="size"> Pack Size: 1 </p>
                         </div>
 
-                        <div class="flexbox8">
+                        <div class="flexboxprice">
                             <p class="price"> $2.49</p>
                         </div>
 
@@ -75,22 +73,20 @@
 
 
                 <!-- item 2-->
-                 <div class="flexbox9" id="spacing">
+                 <div class="flexboxcartitems" id="spacing">
 
                     <!-- image,price and description -->
-                    <div class="flexbox7">
+                    <div class="flexboxitemdetails">
                         
                         <img src="../solution-hw2/HW1/products/double-chocolate-cinnamon-roll.jpg" class="itemimage" alt="Double Chocolate cinnamon roll">
                         
                         <div>
-                            <p class="itemdetails">
-                              Double Chocolate Cinnamon Roll <br>
-                              Glazing: Sugar milk <br>
-                              Pack Size: 6
-                            </p>
+                             <p class="itemdetails" id="name"> Double Chocolate Cinnamon Roll </p>
+                             <p class="itemdetails"> Glazing: Sugar milk </p>
+                             <p class="itemdetails" id="size"> Pack Size: 6 </p>
                         </div>
 
-                        <div class="flexbox8">
+                        <div class="flexboxprice">
                             <p class="price"> $27.45</p>
                         </div>
 
@@ -108,19 +104,19 @@
             <hr class="line">
 
             <!-- Total Price -->
-            <div class="flexbox12">
+            <div class="flexbox1">
 
-                <div class="flexbox10">
+                <div class="flexboxtotal">
                     <p class="price"> Total</p>
                 </div>
 
-                <div class="flexbox11">
+                <div class="flexboxtotalprice">
                     <p class="price">$29.94</p>
                 </div>
             </div>
 
             <!-- button checkout -->
-            <div class="flexbox13">
+            <div class="flexboxbuttoncheckout">
                 <button id="checkout" type="button">Checkout</button>
             </div>
 

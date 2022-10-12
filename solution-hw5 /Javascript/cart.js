@@ -49,6 +49,7 @@ const rollFour = addCinnamonRoll(
     3.49
 )
 
+
 // Setting price for various packs and various glaze options
 
 let packPriceAdaptation = {
@@ -75,6 +76,7 @@ for (const cinnamonRoll of cartSet){
     createItem(cinnamonRoll);
 }
 
+
 // Function to calculate price per cinnamon roll
 
 function cinnamonRollPrice(basePrice,size,glazing){
@@ -82,9 +84,8 @@ function cinnamonRollPrice(basePrice,size,glazing){
     return itemAmount;
 }
 
+
 // Function for creating cinnamon roll items in cart 
-
-
 
 function createItem(cinnamonRoll){
     const template = document.querySelector("#cinnamonroll-template");
@@ -106,14 +107,14 @@ function createItem(cinnamonRoll){
     removeItem.addEventListener('click', () => {
         removeCinnamonRoll(cinnamonRoll)
     
-        let total = document.querySelector(".flexboxtotalprice > .price").innerText.slice(2);
-        document.querySelector(".flexboxtotalprice > .price").innerText = "$ "+ (total - cinnamonRollAmount).toFixed(2);
+    let total = document.querySelector(".flexboxtotalprice > .price").innerText.slice(2);
+    document.querySelector(".flexboxtotalprice > .price").innerText = "$ "+ (total - cinnamonRollAmount).toFixed(2);
 
     });
 }
 
-// Function to update element 
 
+// Function to update element 
 
 function updateElement(cinnamonRoll){
     const cinnamonRollImage = cinnamonRoll.element.querySelector(".itemimage");

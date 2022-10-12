@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Document title -->
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/stylesheet1.css">
+    <script src="Javascript/cartPage.js" defer></script>
+    <title>Bun Bun Bake Shop</title>
+  </head>
+ 
+  <!-- Document body -->
+  <body>
+
+    <!-- Page header - logo, nav bar  -->
+    <div class="flexbox1">
+        <div class="logo">
+          <a href="index.html">
+            <img src="HW1/logo/logo-01.svg" alt="bun bun logo">
+          </a>
+        </div>
+
+      <!-- Page navigation buttons and page header -->
+      <div class="flexbox2">
+        <nav class="flexbox3">
+          <button class="navigation" onclick="window.location.href='index.html'" id="link2">PRODUCTS</button>
+          <button class="navigation" id="selected">CART</button>
+        </nav>
+
+        <!-- Page Header -->
+        <hr class="line">
+        <h1 class="header1">Shopping cart</h1>
+      </div>
+    </div>
+
+    <!-- Cart details and total -->
+    <div class="flexboxcart">
+
+        <!-- Empty div for left of screen -->
+        <div class="flexboxempty">
+        </div>
+
+        <!-- Cart details on right of screen-->
+        <div class="flexboxcartdetails">
+            
+            <!-- Cart items -->
+            <div class="flexboxcartitems">
+
+            </div>
+
+            <!-- Line -->
+            <hr class="line">
+
+            <!-- Total Price -->
+            <div class="flexbox1">
+
+                <div class="flexboxtotal">
+                    <p class="price"> Total</p>
+                </div>
+
+                <div class="flexboxtotalprice">
+                    <p class="price" id="totalPrice">$29.94</p>
+                </div>
+            </div>
+
+            <!-- button checkout -->
+            <div class="flexboxbuttoncheckout">
+                <button id="checkout" type="button">Checkout</button>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!-- Creating a template for the cart -->
+
+    <template id="carttemplate">
+      <div class="flexboxcartitems">
+
+        <!-- image,price and description -->
+        <div class="flexboxitemdetails">
+            
+            <img src="HW1/products/original-cinnamon-roll.jpg" class="itemimage" alt="Original cinnamon roll">
+            
+            <div>
+                 <p class="itemdetails" id="name"> Original Cinnamon Roll </p>
+                 <p class="itemdetails" id="glaze"> Glazing: Keep original </p>
+                 <p class="itemdetails" id="size"> Pack Size: 1 </p>
+            </div>
+
+            <div class="flexboxprice">
+                <p class="price"> $2.49</p>
+            </div>
+
+        </div>
+
+         <!-- remove button -->
+        <div>
+            <p class="remove">Remove</p>
+        </div>
+     </div>
+            
+    </template>
+
+   </body>
+</html>
+

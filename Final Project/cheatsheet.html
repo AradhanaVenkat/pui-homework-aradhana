@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <!-- This is the title of the document-->
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <title>Psychology of UX</title>
+        <script src="Javascript/main.js" defer></script>
+    </head>
+
+<!-- This is the body of the document -->
+    <body>
+        <div class="websitebody">
+
+            <!-- Header -->
+            <div class ="divheading">
+
+                <!-- Page title -->
+                <div class="headingleft">
+                    <a href="index.html" class="logolink">
+                        <img class="logo" src="images/psychology of ux logo.svg" alt="psychology of ux logo">
+                        <h1> THE PSYCHOLOGY OF UX</h1>
+                    </a>
+                </div>
+                
+
+                <!-- Toggle Button -->
+                <a href="quiz.html" class="cheatsheetbuttonlink">
+                    <div class="headingright">
+                        <div class ="gotoquizbutton">
+                            <img class="takethequizbuttonimage" src="images/magnifyingglass.svg" alt="magnifying glass">
+                            <p class="buttontitle">GO TO QUIZ</p>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+
+            <!-- Cognitive Bias Cheatsheet -->
+
+            <div class="pagetitle">
+                <h2 class="biaspagetitle">THE CHEATSHEET</h2>
+                <hr>
+            </div>
+
+            <!-- Cognitive Bias Cards -->
+
+            <div class = "allcognitivebiascards">
+
+                <!-- Confirmation Bias Card -->
+                <div class="individualbiascards" id="cognitiebiascard" onclick="onConfirmationCardClick()">
+                    <div class="topofbiascard" id="topconfirmationbias">
+                        <img class="biasimage" src="images/tickmark.svg" alt="Confirmation Bias">
+                    </div>
+                    
+                    <div class="bottomofbiascard">
+                        <h3 class="biascardtitle">Confirmation Bias</h3>
+                        <p class="biascardsubtitle">People look for evidence that confirms what they think.</p>
+                    </div>
+                </div>
+
+                <!-- Decoy Effect -->
+                <div class="individualbiascards" id="decoyeffectcard" onclick="onDecoyCardClick()">
+                    <div class="topofbiascard" id="topdecoyeffect">
+                        <img class="biasimage" src="images/decoy effect.svg" alt="Decoy Effect">
+                    </div>
+                    
+                    <div class="bottomofbiascard">
+                        <h3 class="biascardtitle">Decoy Effect</h3>
+                        <p class="biascardsubtitle">Creating a new option easy to discard option for users.</p>
+                    </div>
+                </div>
+
+                <!-- Anchoring Bias -->
+                <div class="individualbiascards" id="anchoringbiascard" onclick="onAnchorCardClick()">
+                    <div class="topofbiascard" id="topanchoringbias">
+                        <img class="biasimage" src="images/anchor.svg" alt="Anchoring Bias">
+                    </div>
+                    
+                    <div class="bottomofbiascard">
+                        <h3 class="biascardtitle">Anchoring Bias</h3>
+                        <p class="biascardsubtitle">Users heavily rely on the first piece of information they see.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+<!-- Confirmation Card -->
+        <div class="websitebody" id="confirmationbiasdetails">
+            <div class="cognitivebiasbody">
+                <div class="cognitivebiasbodywrapper">
+                    <div class="cognitivebiasexplained" >
+
+                        <!-- Card Heading -->
+                        <div class="headercolour">
+                            <div class="cardheadingandlogo">
+                                <p class="explanationheader"> Confirmation Bias</p>
+                                <img class="biasimage" src="images/tickmark.svg" alt="Confirmation Bias">
+                            </div>
+        
+                            <div class="exit">
+                                <img class="exit" src="images/close_FILL0_wght400_GRAD0_opsz48 1.svg" alt="close">
+                            </div>
+                        </div>
+        
+                        <!-- Card Details -->
+        
+                        <div class="biasbrief">
+                            <p class="brieftext">The desire to be right and the desire to have been right are two desires, and the sooner we separate them the better off we are.</p>
+                        </div>
+        
+                        <p class="question"> WHAT IS THE CONFIRMATION BIAS?</p>
+                        <p class="explanation"> Confirmation bias is our tendency to cherry-pick information that confirms our existing beliefs or ideas. Confirmation bias explains why two people with opposing views on a topic can see the same evidence and come away feeling validated by it. This cognitive bias is most pronounced in the case of ingrained, ideological, or emotionally charged views. Failing to interpret information in an unbiased way can lead to serious misjudgments. By understanding this, we can learn to identify it in ourselves and others. 
+                        We can be cautious of data that seems to immediately support our views. </p>
+        
+                        <div class="confirmationquizimage">
+                            <img id="confirmationbiascards" src="images/cards.svg" alt="Four cards 1-16 2-25 3-soda 4-Beer">
+                            <img id="confirmationbiasanswer" src="images/16beer.svg" alt="Answer 16 and Beer">
+                        </div>
+        
+                        <!-- Resources -->
+                        <p class="question" id="resources"> RESOURCES AND READINGS </p>
+        
+                        <!-- Link 1 -->
+                        <a href="https://growth.design/psychology" class="resourcelink">
+                            <div class="resourcelinkscontent">
+                                <div class="border">
+                                    <img id="borderimage" src="images/Rectangle 23.svg" alt="Border">
+                                </div>
+            
+                                <div class="links">
+                                    <p class="linkname">THE PSYCHOLOGY OF DESIGN</p>
+                                    <p class="linkauthor">GROWTH.DESIGN</p>
+                                </div>
+            
+                                <div class="arrow">
+                                    <img id="arrowimage" src="images/arrow_right_alt_black_24dp 2.svg" alt="Arrow">
+                                </div>
+                            </div>
+                        </a>
+        
+        
+                        <!-- Link 2 -->
+                        <a href="https://fs.blog/confirmation-bias/" class="resourcelink">
+                            <div class="resourcelinkscontent" id="linktwo">
+                                <div class="border">
+                                    <img id="borderimage" src="images/Rectangle 23.svg" alt="Border">
+                                </div>
+            
+                                <div class="links">
+                                    <p class="linkname">CONFIRMATION BIAS AND THE POWER OF DISCONFIRMING</p>
+                                    <p class="linkauthor">FARNAM STREET</p>
+                                </div>
+            
+                                <div class="arrow">
+                                    <img id="arrowimage" src="images/arrow_right_alt_black_24dp 2.svg" alt="Arrow">
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>    
+
+                </div>
+                
+            </div>
+
+
+        </div>
+
+
+
+    <!-- Decoy Card -->
+        <div class="websitebody" id="decoyeffectdetails">
+            <div class="cognitivebiasbody">
+                <div class="cognitivebiasbodywrapper">
+                    <div class="cognitivebiasexplained">
+
+                        <!-- Card Heading -->
+                        <div class="headercolour" id="decoyeffectheader">
+                            <div class="cardheadingandlogo">
+                                <p class="explanationheader"> Decoy Effect</p>
+                                <img class="biasimage" src="images/decoy effect.svg" alt="Decoy Effect">
+                            </div>
+        
+                            <div class="exit">
+                                <img class="exit" src="images/close_FILL0_wght400_GRAD0_opsz48 1.svg" alt="close">
+                            </div>
+                        </div>
+        
+                        <!-- Card Details -->
+        
+                        <div class="biasbrief" id="decoyeffecttextbox">
+                            <p class="brieftext" id="decoyeffecttext">Why do we feel more strongly about one option after a third one is added?</p>
+                        </div>
+        
+                        <p class="question"> WHAT IS THE DECOY EFFECT?</p>
+                        <p class="explanation"> The decoy effect describes how, when we are choosing between two alternatives, the addition of a third, less attractive option (the decoy) 
+                            can influence our perception of the original two choices. Decoys are “asymmetrically dominated”: they are completely inferior to one option (the target) but 
+                            only partially inferior to the other (the competitor). For this reason, the decoy effect is sometimes called the “asymmetric dominance effect.” </p>
+        
+                        <div class="confirmationquizimage">
+                            <img id="decoyeffectcards" src="images/decoyeffectanswer.svg" alt="Grande $2.5 for 12oz. is the decoy option">
+                        </div>
+        
+                        <!-- Resources -->
+                        <p class="question" id="resources"> RESOURCES AND READINGS </p>
+        
+                        <!-- Link 1 -->
+                        <a href="https://growth.design/psychology" class="resourcelink">
+                            <div class="resourcelinksdecoyeffect">
+                                <div class="border">
+                                    <img id="borderimage" src="images/Rectangle blue.svg" alt="Border">
+                                </div>
+            
+                                <div class="links">
+                                    <p class="linknamedecoy">THE PSYCHOLOGY OF DESIGN</p>
+                                    <p class="linkauthor">GROWTH.DESIGN</p>
+                                </div>
+            
+                                <div class="arrow">
+                                    <img id="arrowimage" src="images/arrow_right_alt_black_24dp 2.svg" alt="Arrow">
+                                </div>
+                            </div>
+                        </a>
+        
+        
+                        <!-- Link 2 -->
+                        <a href="https://busterbenson.com/piles/cognitive-biases/" class="resourcelink">
+                            <div class="resourcelinksdecoyeffect" id="linktwo">
+                                <div class="border">
+                                    <img id="borderimage" src="images/Rectangle blue.svg" alt="Border">
+                                </div>
+            
+                                <div class="links">
+                                    <p class="linknamedecoy">COGNITIVE BIASES</p>
+                                    <p class="linkauthor">BUSTER BENSON</p>
+                                </div>
+            
+                                <div class="arrow">
+                                    <img id="arrowimage" src="images/arrow_right_alt_black_24dp 2.svg" alt="Arrow">
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>    
+
+                </div>
+                
+            </div>
+        </div>
+
+
+    
+
+    
+        <!-- Anchoring Bias Card -->
+        <div class="websitebody" id="anchoringbiasdetails">
+            <div class="cognitivebiasbody">
+                <div class="cognitivebiasbodywrapper">
+                    <div class="cognitivebiasexplained">
+
+                        <!-- Card Heading -->
+                        <div class="headercolour" id="anchoringbiasheader">
+                            <div class="cardheadingandlogo">
+                                <p class="explanationheader"> Anchoring Bias</p>
+                                <img class="biasimage" src="images/anchor.svg" alt="Anchoring Bias">
+                            </div>
+        
+                            <div class="exit">
+                                <img class="exit" src="images/close_FILL0_wght400_GRAD0_opsz48 1.svg" alt="close">
+                            </div>
+                        </div>
+        
+                        <!-- Card Details -->
+        
+                        <div class="biasbrief" id="anchorbiastextbox">
+                            <p class="brieftext" id="anchorbiastext">Why do we feel more strongly about one option after a third one is added?</p>
+                        </div>
+        
+                        <p class="question"> WHAT IS THE ANCHORING BIAS?</p>
+                        <p class="explanation"> The initial information that users get affects subsequent judgments. Anchoring often works 
+                            even when the nature of the anchor doesn't have any relation with the decision at hand. It's useful to increase perceived 
+                            value. When we become anchored to a specific figure or plan of action, we end up filtering all new information through the 
+                            framework we initially drew up in our head, distorting our perception. This makes us reluctant to make significant changes to our plans, 
+                            even if the situation calls for it.
+                        </p>
+        
+                        <div class="confirmationquizimage">
+                            <img id="anchorbiascards" src="images/anchor answer.svg" alt="Car 1 for $1000 is the anchor">
+                        </div>
+        
+                        <!-- Resources -->
+                        <p class="question" id="resources"> RESOURCES AND READINGS </p>
+        
+                        <!-- Link 1 -->
+                        <a href="https://growth.design/psychology" class="resourcelink">
+                            <div class="resourcelinksanchorbias">
+                                <div class="border">
+                                    <img id="borderimage" src="images/Rectangle 25.svg" alt="Border">
+                                </div>
+            
+                                <div class="links">
+                                    <p class="linknamedecoy">THE PSYCHOLOGY OF DESIGN</p>
+                                    <p class="linkauthor">GROWTH.DESIGN</p>
+                                </div>
+            
+                                <div class="arrow">
+                                    <img id="arrowimage" src="images/arrow_right_alt_black_24dp 2.svg" alt="Arrow">
+                                </div>
+                            </div>
+                        </a>
+        
+        
+                        <!-- Link 2 -->
+                        <a href="https://thedecisionlab.com/biases/anchoring-bias" class="resourcelink">
+                            <div class="resourcelinksanchorbias" id="linktwo">
+                                <div class="border">
+                                    <img id="borderimage" src="images/Rectangle 25.svg" alt="Border">
+                                </div>
+            
+                                <div class="links">
+                                    <p class="linknamedecoy">ANCHORING BIAS, EXPLAINED</p>
+                                    <p class="linkauthor">THE DECISION LAB</p>
+                                </div>
+            
+                                <div class="arrow">
+                                    <img id="arrowimage" src="images/arrow_right_alt_black_24dp 2.svg" alt="Arrow">
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>    
+
+                </div>
+                
+            </div>
+        </div>
+
+
+    </body>

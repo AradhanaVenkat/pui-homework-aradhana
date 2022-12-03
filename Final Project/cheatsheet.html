@@ -6,9 +6,13 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <title>Psychology of UX</title>
         <script src="Javascript/main.js" defer></script>
     </head>
+
+
+
 
 <!-- This is the body of the document -->
     <body>
@@ -94,10 +98,11 @@
 
 
 
+
 <!-- Confirmation Card -->
         <div class="websitebody" id="confirmationbiasdetails">
             <div class="cognitivebiasbody">
-                <div class="cognitivebiasbodywrapper">
+                <div class="cognitivebiasbodywrapper animate__animated animate__bounceIn">
                     <div class="cognitivebiasexplained" >
 
                         <!-- Card Heading -->
@@ -108,7 +113,7 @@
                             </div>
         
                             <div class="exit">
-                                <img class="exit" src="images/close_FILL0_wght400_GRAD0_opsz48 1.svg" alt="close">
+                                <img class="exit" src="images/close_FILL0_wght400_GRAD0_opsz48 1.svg" alt="close" onclick="onExitOneClick()">
                             </div>
                         </div>
         
@@ -179,9 +184,10 @@
 
 
     <!-- Decoy Card -->
+    <!-- Cite Animate.style for card animation -->
         <div class="websitebody" id="decoyeffectdetails">
             <div class="cognitivebiasbody">
-                <div class="cognitivebiasbodywrapper">
+                <div class="cognitivebiasbodywrapper animate__animated animate__bounceIn">
                     <div class="cognitivebiasexplained">
 
                         <!-- Card Heading -->
@@ -192,7 +198,7 @@
                             </div>
         
                             <div class="exit">
-                                <img class="exit" src="images/close_FILL0_wght400_GRAD0_opsz48 1.svg" alt="close">
+                                <img class="exit" src="images/close_FILL0_wght400_GRAD0_opsz48 1.svg" alt="close" onclick="onExitTwoClick()">
                             </div>
                         </div>
         
@@ -262,10 +268,10 @@
     
 
     
-        <!-- Anchoring Bias Card -->
+    <!-- Anchoring Bias Card -->
         <div class="websitebody" id="anchoringbiasdetails">
             <div class="cognitivebiasbody">
-                <div class="cognitivebiasbodywrapper">
+                <div class="cognitivebiasbodywrapper animate__animated animate__bounceIn">
                     <div class="cognitivebiasexplained">
 
                         <!-- Card Heading -->
@@ -276,7 +282,7 @@
                             </div>
         
                             <div class="exit">
-                                <img class="exit" src="images/close_FILL0_wght400_GRAD0_opsz48 1.svg" alt="close">
+                                <img class="exit" src="images/close_FILL0_wght400_GRAD0_opsz48 1.svg" alt="close" onclick="onExitThreeClick()">
                             </div>
                         </div>
         
@@ -309,7 +315,7 @@
                                 </div>
             
                                 <div class="links">
-                                    <p class="linknamedecoy">THE PSYCHOLOGY OF DESIGN</p>
+                                    <p class="linknameanchor">THE PSYCHOLOGY OF DESIGN</p>
                                     <p class="linkauthor">GROWTH.DESIGN</p>
                                 </div>
             
@@ -328,7 +334,7 @@
                                 </div>
             
                                 <div class="links">
-                                    <p class="linknamedecoy">ANCHORING BIAS, EXPLAINED</p>
+                                    <p class="linknameanchor">ANCHORING BIAS, EXPLAINED</p>
                                     <p class="linkauthor">THE DECISION LAB</p>
                                 </div>
             
@@ -344,6 +350,5 @@
                 
             </div>
         </div>
-
 
     </body>

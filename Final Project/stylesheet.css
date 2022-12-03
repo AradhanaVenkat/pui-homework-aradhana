@@ -77,6 +77,7 @@ h1{
 /* ----------------------------------------INDEX PAGE------------------------------------- */
 
 /* Website options */
+
 .websiteoptions{
     display: flex;
     flex-direction: row;
@@ -107,7 +108,7 @@ h1{
     border-radius: 20px;
 }
 
-/* Option Cards */
+/* Option Cards Card 1*/
 
 #topofquizcard{
     background: #5D3754;
@@ -142,14 +143,6 @@ h1{
     justify-content: center;
 }
 
-#topofcheatsheetcard{
-    background: #008B8B;
-    display: flex;
-    flex: 1 0 auto;
-    justify-content: center;
-    align-items: center;
-}
-
 #quizcardlink1{
     display: flex;
     flex-direction: row;
@@ -159,6 +152,18 @@ h1{
     margin-right: 2%;
 }
 
+
+/* Option Cards Card 2*/
+
+#topofcheatsheetcard{
+    background: #008B8B;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
 #quizcardlink2{
     display: flex;
     flex-direction: row;
@@ -166,6 +171,27 @@ h1{
     align-items: center;
     justify-content: center;
     margin-left: 2%;
+}
+
+/* Media Query for responsive design */
+
+@media (max-width: 1270px) {
+    .websiteoptions {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7%;
+    }
+
+    #quizcardlink1{
+        margin-right: 0%;
+        margin-bottom: 7%;
+    }
+
+    #quizcardlink2{
+        margin-left: 0%;
+        margin-top: 7%;
+    }
 }
 
 
@@ -179,6 +205,12 @@ h1{
     align-items: center;
     flex: 1 0 auto;
 }
+
+.cheatsheetbuttonlink{
+    display: flex;
+    text-decoration: none;
+}
+
 
 .headingright{
     display: flex;
@@ -205,6 +237,15 @@ h1{
     background: #431939;
 }
 
+.takethequizbuttonimage{
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    display: flex;
+    margin-left: 40px;
+}
+
+
 .buttontitle{
     font-family: IBM Plex Sans600;
     font-style: normal;
@@ -218,13 +259,6 @@ h1{
     margin-right: 40px;
 }
 
-.takethequizbuttonimage{
-    align-items: center;
-    justify-content: center;
-    height: 24px;
-    display: flex;
-    margin-left: 40px;
-}
 
 /* Page Title */
 .pagetitle{
@@ -273,7 +307,6 @@ hr{
     border-radius: 20px;
     overflow: hidden;
     flex: 1;
-    flex-wrap: wrap;
     cursor: pointer;
 }
 
@@ -358,9 +391,7 @@ hr{
 }
 
 
-.parent{
-    /* display: flex;
-    flex-direction: row; */
+/* .parent{
     width: 100%;
     overflow-x: scroll;
 
@@ -374,7 +405,368 @@ hr{
 
 #mycard{
     width: 50%;
+} */
+
+
+/* Media Query for responsive design */
+
+@media (max-width: 1200px) {
+    .allcognitivebiascards{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    #cognitiebiascard{
+        margin-right:0%;
+    }
+
+    #decoyeffectcard{
+        margin-right:0%;
+        margin-left:0%;
+    }
+
+    #anchoringbiascard{
+        margin-left:0%;
+    }
+
+    .individualbiascards{
+        margin-bottom: 6%;
+        width: 50%;
+    }
+
+    .divheading{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .cheatsheetbuttonlink{
+        width: 100%;
+    }
+
+    .headingright{
+        width: 100%;
+        justify-content: end;
+        margin-top: 1%;
+    }
+
+    .cognitivebiasexplained{
+        height: 100%;
+    }
 }
+
+/* ----------------------------------------CONFIRMATION PAGE------------------------------------- */
+
+/* Pop Up display */
+.cognitivebiasbodywrapper{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#confirmationbiasdetails{
+    display:none;
+}
+
+#decoyeffectdetails{
+    display:none;
+}
+
+#anchoringbiasdetails{
+    display:none;
+}
+
+/* Card Background */
+
+.cognitivebiasexplained{
+    background: white;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+/* Card Header */
+.headercolour{
+    background: #008B8B;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+#decoyeffectheader{
+    background: #0F4880;
+}
+
+#anchoringbiasheader{
+    background: #5D3754;
+}
+
+
+.explanationheader{
+    font-family: IBM Plex Sans700;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 65px;
+    color: #FFFFFF;
+    flex: 1;
+    margin-left: 4%;
+}
+
+.cardheadingandlogo{
+    display:flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.exit{
+    margin: 1%;
+    cursor: pointer;
+}
+
+/* Card Details */
+.biasbrief{
+    background:#EBF6F6;
+    border-radius: 10px;
+    margin: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+#decoyeffecttextbox{
+    background-color: #ECF0F5;
+}
+
+#anchorbiastextbox{
+    background-color: #EFEBEE;
+}
+
+.brieftext{
+    font-family: IBM Plex Sans500;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    color: #0E5A5A;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 6%;
+    margin-bottom: 3%;
+}
+
+#decoyeffecttext{
+    color: #0A2F53;
+}
+
+#anchorbiastext{
+    color: #431939;
+}
+
+.question{
+    font-family: IBM Plex Sans600;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 42px;
+    color: #020A36;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+.explanation{
+    font-family: IBM Plex Sans400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #020A36;
+    margin-left: 5%;
+    margin-right: 6%;
+    margin-top: 0px;
+}
+
+.confirmationquizimage{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#confirmationbiascards{
+    margin-left: 5%;
+    margin-right: 6%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    width: 55%;
+}
+
+#confirmationbiasanswer{
+    height: 100%;
+    margin-bottom: 4%;
+
+}
+
+#decoyeffectcards{
+    margin-left: 5%;
+    margin-right: 6%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    width: 55%;
+}
+
+#anchorbiascards{
+    margin-left: 5%;
+    margin-right: 6%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    width: 25%;
+}
+
+
+/* Confirmation Card Resources */
+
+#resources{
+    font-family: IBM Plex Sans600;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.resourcelink{
+    text-decoration: none;
+}
+
+.resourcelinkscontent{
+    background: #EBF6F6;
+    margin: 3%;
+    padding-right: 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.resourcelinksdecoyeffect{
+    background: #ECF0F5;
+    margin: 3%;
+    padding-right: 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.resourcelinksanchorbias{
+    background: #EFEBEE;
+    margin: 3%;
+    padding-right: 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.border{
+    display: flex;
+    height: 100%;
+    flex-grow: inherit;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.linkname{
+    font-family: IBM Plex Sans600;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 39px;
+    color: #0E5A5A;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.linkauthor{
+    font-family: IBM Plex Sans400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #13100C;
+    margin-left: 2%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+.linknamedecoy{
+    font-family: IBM Plex Sans600;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 39px;
+    color: #0A2F53;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.linknameanchor{
+    font-family: IBM Plex Sans600;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 39px;
+    color: #5D3754;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.borderimage{
+    height: 100%;
+    display: flex;
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#arrowimage{
+    width: 70px;
+    padding-right: 10%;
+    margin-right: 10%;
+}
+
+#linktwo{
+    margin-bottom: 6%;
+    margin-top: 1%;
+}
+
+
 
 
 /* ----------------------------------------QUIZ PAGE------------------------------------- */
@@ -402,11 +794,6 @@ hr{
     height: 24px;
     display: flex;
     margin-left: 40px;
-}
-
-.cheatsheetbuttonlink{
-    display: flex;
-    text-decoration: none;
 }
 
 
@@ -494,302 +881,7 @@ hr{
     margin-left: 0.1%;
 }
 
-/* ----------------------------------------CONFIRMATION PAGE------------------------------------- */
 
-.cognitivebiasbodywrapper{
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-/* Card Background */
-
-#confirmationbiasdetails{
-    display:none;
-}
-
-#decoyeffectdetails{
-    display:none;
-}
-
-#anchoringbiasdetails{
-    display:none;
-}
-
-.cognitivebiasexplained{
-    background: white;
-    margin: 3%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border-radius: 15px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    
-}
-
-/* Card Header */
-.headercolour{
-    background: #008B8B;
-    border-radius: 15px 15px 0px 0px;
-    display: flex;
-    flex-direction: row;
-}
-
-#decoyeffectheader{
-    background: #0F4880;
-}
-
-#anchoringbiasheader{
-    background: #5D3754;
-}
-
-
-.explanationheader{
-    font-family: IBM Plex Sans700;
-    font-style: normal;
-    font-size: 50px;
-    line-height: 65px;
-    color: #FFFFFF;
-    flex: 1;
-    margin-left: 4%;
-}
-
-.cardheadingandlogo{
-    display:flex;
-    flex-direction: row;
-    flex: 1;
-    align-items: center;
-    margin-right: 2%;
-}
-
-.exit{
-    margin: 1%;
-}
-
-/* Card Details */
-.biasbrief{
-    background:#EBF6F6;
-    border-radius: 10px;
-    margin: 3%;
-    align-items: center;
-    justify-content: center;
-}
-
-.brieftext{
-    font-family: IBM Plex Sans500;
-    font-style: normal;
-    font-size: 30px;
-    line-height: 39px;
-    display: flex;
-    align-items: center;
-    color: #0E5A5A;
-    margin-top: 3%;
-    margin-left: 4%;
-    margin-right: 6%;
-    margin-bottom: 3%;
-}
-
-#decoyeffecttextbox{
-    background-color: #ECF0F5;
-}
-
-#anchorbiastextbox{
-    background-color: #EFEBEE;
-}
-
-#decoyeffecttext{
-    color: #0A2F53;
-}
-
-#anchorbiastext{
-    color: #431939;
-}
-
-.question{
-    font-family: IBM Plex Sans600;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 42px;
-    color: #020A36;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 1%;
-}
-
-.explanation{
-    font-family: IBM Plex Sans400;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 26px;
-    color: #020A36;
-    margin-left: 5%;
-    margin-right: 6%;
-    margin-top: 0px;
-}
-
-.confirmationquizimage{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#confirmationbiascards{
-    margin-left: 5%;
-    margin-right: 6%;
-    margin-top: 3%;
-    margin-bottom: 4%;
-    width: 55%;
-}
-
-#decoyeffectcards{
-    margin-left: 5%;
-    margin-right: 6%;
-    margin-top: 3%;
-    margin-bottom: 4%;
-    width: 55%;
-}
-
-#anchorbiascards{
-    margin-left: 5%;
-    margin-right: 6%;
-    margin-top: 3%;
-    margin-bottom: 4%;
-    width: 25%;
-}
-
-#confirmationbiasanswer{
-    height: 100%;
-    margin-bottom: 4%;
-
-}
-
-/* Confirmation Card Resources */
-
-#resources{
-    font-family: IBM Plex Sans600;
-    font-style: normal;
-    font-size: 30px;
-    line-height: 39px;
-}
-
-.resourcelinksdecoyeffect{
-    background: #ECF0F5;
-    margin: 3%;
-    padding-right: 1%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1%;
-    margin-left: 3%;
-}
-
-.resourcelinksanchorbias{
-    background: #EFEBEE;
-    margin: 3%;
-    padding-right: 1%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1%;
-    margin-left: 3%;
-}
-
-.resourcelink{
-    text-decoration: none;
-}
-
-.resourcelinkscontent{
-    background: #EBF6F6;
-    margin: 3%;
-    padding-right: 1%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1%;
-    margin-left: 3%;
-}
-
-.border{
-    display: flex;
-    height: 100%;
-    flex-grow: inherit;
-}
-
-.links{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-}
-
-.linkname{
-    font-family: IBM Plex Sans600;
-    font-style: normal;
-    font-size: 30px;
-    line-height: 39px;
-    color: #0E5A5A;
-    margin-left: 2%;
-    margin-bottom: 1%;
-    margin-top: 2%;
-}
-
-.linknamedecoy{
-    font-family: IBM Plex Sans600;
-    font-style: normal;
-    font-size: 30px;
-    line-height: 39px;
-    color: #0A2F53;
-    margin-left: 2%;
-    margin-bottom: 1%;
-    margin-top: 2%;
-}
-
-.linkauthor{
-    font-family: IBM Plex Sans400;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 26px;
-    color: #13100C;
-    margin-left: 2%;
-    margin-top: 0%;
-    margin-bottom: 2%;
-}
-
-.borderimage{
-    height: 100%;
-    display: flex;
-}
-
-.arrow{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#arrowimage{
-    width: 70px;
-    padding-right: 10%;
-    margin-right: 10%;
-}
-
-#linktwo{
-    margin-bottom: 6%;
-    margin-top: 1%;
-}
 
 /* cite w3schools.com/howto/howto....*/
 
@@ -844,3 +936,7 @@ hr{
     }
 
 }
+
+/* .darkmode-background {
+    background: transparent !important;
+} */

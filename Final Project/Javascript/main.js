@@ -60,6 +60,8 @@ function onExitThreeClick(){
 
 
 
+
+
 function onAnswer1Click() {
 
     console.log("clicked answer 1");

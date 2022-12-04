@@ -202,9 +202,9 @@ h1{
     }
 }
 
-.darkmode-layer, .darkmode-toggle {
+/* .darkmode-layer, .darkmode-toggle {
     z-index: 500;
-}
+} */
 
 
 /* ----------------------------------------CHEATSHEET PAGE------------------------------------- */
@@ -311,6 +311,7 @@ hr{
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2%;
 }
 
 .individualbiascards{
@@ -792,6 +793,7 @@ hr{
 
 
 /* Quiz Cards */
+
 .cardbackground{
     background: white;
     border-radius: 20px;
@@ -851,51 +853,10 @@ hr{
     flex: 1;
 }
 
-/* Quiz Question counter */
-.carouselcounter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.counternumber{
-    font-family: IBM Plex Sans300;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 31px;
-    text-align: center;
-    color: #020A36;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-#arrowright{
-    margin-left: 0.1%;
-}
-
-
-/* .parent{
-    width: 100%;
-    overflow-x: scroll;
-
-}
-
-.scrollable{
-    display: flex;
-    flex-direction: row;
-    width: 200%;
-}
-
-#mycard{
-    width: 50%;
-} */
-
-
-/* cite w3schools.com/howto/howto....*/
+/* Flipped Card */
+/* cite https://www.w3schools.com/howto/howto_css_flip_card.asp*/
 
 .flip-card {
-    /* width: 50%; */
     perspective: 1000px;
 }
 
@@ -913,18 +874,12 @@ hr{
 
 }
 
-/* .flip-card-front {
-} */
-
+/* Flipcard back */
 .flip-card-back {
     transform: rotateY(180deg);
 }
 
 #answer1{
-    display: none;
-}
-
-#answer3{
     display: none;
 }
 
@@ -938,20 +893,7 @@ hr{
 }
 
 
-@media (max-width: 1370px) {
-
-    .question1options {
-        flex-direction: column;
-    }
-
-}
-
-/* .darkmode-background {
-    background: transparent !important;
-} */
-
-/* Quiz answer card 1 */
-
+/* Card back CSS */
 .cardanswer{
     font-family: IBM Plex Sans600;
     font-style: normal;
@@ -1024,7 +966,55 @@ button{
     margin-bottom: 4%;
 }
 
-/* width: 143px;
-height: 51px;
-left: 329px;
-top: 633px; */
+
+/* To make the website responsive */
+
+@media (max-width: 1370px) {
+
+    .question1options {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #question1optiononeimage{
+        margin-right: 0%;
+        margin-bottom: 3%;
+    }
+
+    #question1optiontwoimage{
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+
+    #question1optionthreeimage{
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+
+    .decoyexplanation{
+        flex-direction:column-reverse;
+        padding-bottom: 30%;
+    }
+
+    .decoyexplanationright{
+        margin-top: 2%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    button{
+        margin-top: 1%;
+    }
+
+}
+
+/* .darkmode-background {
+    background: transparent !important;
+} */
+

@@ -51,7 +51,3 @@ function onExitThreeClick(){
     var x = document.getElementById("anchoringbiasdetails");
     x.style.display = "none";
 }
-
-
-// Animate.style - All animations will take half the time to accomplish
-// document.documentElement.style.setProperty('--animate-duration', '.8s');

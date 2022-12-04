@@ -141,6 +141,14 @@ h1{
     height: 100px;
     align-items: center;
     justify-content: center;
+    z-index: 500;
+}
+
+.viewcheatsheet{
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
 }
 
 #quizcardlink1{
@@ -194,6 +202,9 @@ h1{
     }
 }
 
+.darkmode-layer, .darkmode-toggle {
+    z-index: 500;
+}
 
 
 /* ----------------------------------------CHEATSHEET PAGE------------------------------------- */
@@ -243,6 +254,7 @@ h1{
     height: 24px;
     display: flex;
     margin-left: 40px;
+    /* z-index: 2000; */
 }
 
 
@@ -937,3 +949,82 @@ hr{
 /* .darkmode-background {
     background: transparent !important;
 } */
+
+/* Quiz answer card 1 */
+
+.cardanswer{
+    font-family: IBM Plex Sans600;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 42px;
+    color: #020A36;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+.cardanswertwo{
+    font-family: IBM Plex Sans400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 42px;
+    color: #020A36;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+#effectname{
+    font-family: IBM Plex Sans600;
+}
+
+.decoyexplanation{
+    display: flex;
+}
+
+.decoyexplanationleft{
+    display: flex;
+    flex-direction: column;
+}
+
+.abouteffect{
+    font-family: IBM Plex Sans500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: #020A36;
+    margin-top: 5%;
+    margin-bottom: 0%;
+
+}
+
+.effectexplanantion{
+    font-family: IBM Plex Sans400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #020A36;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
+
+button{
+    font-family: IBM Plex Sans500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    color: #020A36;
+    background: white;
+    align-items: flex-start;
+    padding: 14px 14px;
+    border: 1px solid #020A36;
+    border-radius: 5px;
+    width: 18%;
+    margin-bottom: 4%;
+}
+
+/* width: 143px;
+height: 51px;
+left: 329px;
+top: 633px; */

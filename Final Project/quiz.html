@@ -6,7 +6,8 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="stylesheet.css">
         <title>Psychology of UX</title>
-        <script src="Javascript/main.js" defer></script>
+        <script src="Javascript/quizrotate.js" defer></script>
+        <script src="Javascript/darkmode.js" defer></script>
     </head>
 
 
@@ -34,23 +35,21 @@
                         </div>
                     </div>
                 </a>
-
-
             </div>
 
            
-            <!-- Quiz Card 1-->
-            <!-- <div class="parent"> -->
-                <!-- <div class="scrollable"> -->
+            <!-- Quiz Card-->
                     <div class="flip-card">
 
                         <div class="flip-card-inner" id="questionone">
+
+                            <!-- Quiz question card -->
                 
                             <div class="cardbackground flip-card-front">
                                 <h3 class="cardtitle"> LET'S SEE IF YOU CAN IDENTIFY THE BIAS </h3>
-                                <p class="cardquestion"> 1. Which starbucks would you pick? </p>
+                                <p class="cardquestion"> Which starbucks would you pick? </p>
             
-                                <!-- Options -->
+                                <!-- Quiz question options -->
                                 <div class="question1options">
                                     <img id="question1optiononeimage" src="images/q1card1.svg" alt="10oz starbucks for $2" onclick="onAnswer1Click()">
                                     <img id="question1optiontwoimage" src="images/q1card2.svg" alt="12oz starbucks for $2.5" onclick="onAnswer2Click()">
@@ -58,58 +57,66 @@
                                 </div>
                             </div>
 
+
+                            <!-- Quiz answer card 1-->
+
                             <div class="cardbackground flip-card-back" id="answer1">
-                                <h3 class="cardtitle"> BACK! </h3>
-                                <p class="cardquestion"> BACK! </p>
-                                <img id="question1optiononeimage" src="images/q1card1.svg" alt="10oz starbucks for $2">
+                                <p class="cardanswer"> You just got tricked! This is what most customers would pick </p>
+                                <p class="cardanswertwo">This is due to <span id="effectname"> Decoy Effect. </span></p>
+                                <div class="decoyexplanation">
+                                    <div class="decoyexplanationleft">
+                                        <p class="abouteffect">WHAT IS DECOY EFFECT? </p>
+                                        <p class="effectexplanantion">When we are choosing between two alternatives, the addition of a third, 
+                                            less attractive option (the decoy) can influence our perception of the original two choices. Decoys 
+                                            completely inferior to one option (the target, in this case Venti) but only partially inferior to the
+                                             other (the competitor, in this case Tall). </p>
+                                        <button> LEARN MORE</button>
+
+                                    </div>
+
+                                    <div class="decoyexplanationright">
+                                        <img id="question1optionthreeimage" src="images/q1card3.svg" alt="20oz starbucks for $3">
+                                    </div>
+
+                                </div>
                             </div>
+
+
+                            <!-- Quiz answer card 2 -->
 
                             <div class="cardbackground flip-card-back" id="answer2">
-                                <h3 class="cardtitle"> BACK! </h3>
-                                <p class="cardquestion"> BACK! </p>
-                                <img id="question1optiontwoimage" src="images/q1card2.svg" alt="12oz starbucks for $2.5">
+                                <p class="cardanswer"> Interesting choice, most customers would pick Venti! </p>
+                                <p class="cardanswertwo">This is due to <span id="effectname"> Decoy Effect. </span></p>
+                                <div class="decoyexplanation">
+                                    <div class="decoyexplanationleft">
+                                        <p class="abouteffect">WHAT IS DECOY EFFECT? </p>
+                                        <p class="effectexplanantion">When we are choosing between two alternatives, the addition of a third, 
+                                            less attractive option (the decoy) can influence our perception of the original two choices. Decoys 
+                                            completely inferior to one option (the target, in this case Venti) but only partially inferior to the
+                                             other (the competitor, in this case Tall). </p>
+                                        <button> LEARN MORE</button>
+
+                                    </div>
+
+                                    <div class="decoyexplanationright">
+                                        <img id="question1optionthreeimage" src="images/q1card3.svg" alt="20oz starbucks for $3">
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="cardbackground flip-card-back" id="answer3">
-                                <h3 class="cardtitle"> BACK! </h3>
-                                <p class="cardquestion"> BACK! </p>
-                                <img id="question1optionthreeimage" src="images/q1card3.svg" alt="20oz starbucks for $3">
-                            </div>
-    
-                        
 
                         </div>
                     </div>
-    
-                    <!-- <div id="mycard">
-                    
-                        <div class="cardbackground front">
-                            <h3 class="cardtitle"> LET'S SEE IF YOU CAN IDENTIFY THE BIAS </h3>
-                            <p class="cardquestion"> 1. Which starbucks would you pick? </p>
-        
-                            <div class="question1options">
-                                <img id="question1optiononeimage" src="images/q1card1.svg" alt="10oz starbucks for $2">
-                                <img id="question1optiontwoimage" src="images/q1card2.svg" alt="12oz starbucks for $2.5">
-                                <img id="question1optionthreeimage" src="images/q1card3.svg" alt="20oz starbucks for $3">
-                            </div>
-                        </div>
-    
-                    </div> -->
-
-                <!-- </div> -->
-
-
-            <!-- </div> -->
-
-
 
             <!-- Question Counter -->
-            <div class="carouselcounter">
+            <!-- <div class="carouselcounter"> -->
                 <!-- <img id="arrowleft" src="images/chevron_right_FILL0_wght400_GRAD0_opsz48 2.svg" alt="arrowleft"> -->
-                <p class="counternumber"> 1 of 3 </p>
+                <!-- <p class="counternumber"> 1 of 3 </p>
                 <img id="arrowright" src="images/chevron_right_FILL0_wght400_GRAD0_opsz48 1.svg" alt="arrowright">
-            </div>
+            </div> -->
 
+            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js" ></script>
+            <script src=“Javascript/darkmode.js”></script> 
             
         </div>
     </body>

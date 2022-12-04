@@ -43,14 +43,3 @@ function onAnswer3Click(){
     var questionCard = document.getElementById("questionone");
     questionCard.classList.add('rotated-card');
 }
-
-
-// function onLearnMoreClick(){
-//     window.location.href='cheatsheet.html'
-//     var x = document.getElementById("decoyeffectdetails");
-//     if (x.style.display === "block") {
-//         x.style.display = "none";
-//       } else {
-//         x.style.display = "block";
-//       }
-// }

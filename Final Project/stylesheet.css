@@ -202,9 +202,9 @@ h1{
     }
 }
 
-/* .darkmode-layer, .darkmode-toggle {
+.darkmode-layer, .darkmode-toggle {
     z-index: 500;
-} */
+}
 
 
 /* ----------------------------------------CHEATSHEET PAGE------------------------------------- */
@@ -789,6 +789,7 @@ hr{
     height: 24px;
     display: flex;
     margin-left: 40px;
+    /* z-index: 500; */
 }
 
 
@@ -949,7 +950,7 @@ hr{
     margin-bottom: 3%;
 }
 
-button{
+.learnmore{
     font-family: IBM Plex Sans500;
     font-style: normal;
     font-size: 18px;
@@ -1008,7 +1009,7 @@ button{
 
     }
 
-    button{
+    .learnmore{
         margin-top: 1%;
     }
 

@@ -13,6 +13,10 @@ function onAnswer1Click() {
 
     var questionCard = document.getElementById("questionone");
     questionCard.classList.add('rotated-card');
+    setTimeout(function(){
+      var x = document.getElementById("flipfront");
+      x.remove()
+    },1000)
 
 }
 
@@ -28,6 +32,13 @@ function onAnswer2Click(){
 
     var questionCard = document.getElementById("questionone");
     questionCard.classList.add('rotated-card');
+
+    var questionCard = document.getElementById("questionone");
+    questionCard.classList.add('rotated-card');
+    setTimeout(function(){
+      var x = document.getElementById("flipfront");
+      x.remove()
+    },1000)
 }
 
 // On click the third quiz option
@@ -42,4 +53,23 @@ function onAnswer3Click(){
 
     var questionCard = document.getElementById("questionone");
     questionCard.classList.add('rotated-card');
+
+    var questionCard = document.getElementById("questionone");
+    questionCard.classList.add('rotated-card');
+    setTimeout(function(){
+      var x = document.getElementById("flipfront");
+      x.remove()
+    },1000)
+}
+
+// On learn more click 
+function onLearnMoreClick(){
+  console.log('foo')
+  window.location.replace("cheatsheet.html?effect=confirm")
+  var x = document.getElementById("learnmore");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }

@@ -10,6 +10,7 @@ function onConfirmationCardClick(){
     console.log("cardClick")
 }
 
+
 // Closing pop up with confirmation bias details
 function onExitOneClick(){
     var x = document.getElementById("confirmationbiasdetails");
@@ -51,3 +52,12 @@ function onExitThreeClick(){
     var x = document.getElementById("anchoringbiasdetails");
     x.style.display = "none";
 }
+
+// To open decoy effect pop up when learn more is clicked on the quiz page
+const urlSearchParams = new URLSearchParams(window.location.search);
+const effect = urlSearchParams.get("effect")
+console.log(effect)
+if (effect ==="confirm"){
+  onDecoyCardClick()
+}
+

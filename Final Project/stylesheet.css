@@ -126,7 +126,26 @@ h1{
     height: 30%;
 }
 
+#bottomofsecondcard{
+    background: white;
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+    height: 30%;
+}
+
 #textcardlabel{
+    font-family: IBM Plex Sans600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #020A36;
+}
+
+#textcardlabeltwo{
     font-family: IBM Plex Sans600;
     font-style: normal;
     font-size: 24px;
@@ -633,8 +652,15 @@ hr{
 
 /* Confirmation Card Resources */
 
-#resources{
+.resources{
     font-family: IBM Plex Sans600;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 42px;
+    color: #020A36;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
     font-style: normal;
     font-size: 30px;
     line-height: 39px;
@@ -751,13 +777,23 @@ hr{
     justify-content: center;
 }
 
-#arrowimage{
+.arrowimage{
     width: 70px;
     padding-right: 10%;
     margin-right: 10%;
 }
 
-#linktwo{
+#linktwoconfirmation{
+    margin-bottom: 6%;
+    margin-top: 1%;
+}
+
+#linktwocognitive{
+    margin-bottom: 6%;
+    margin-top: 1%;
+}
+
+#linktwoanchor{
     margin-bottom: 6%;
     margin-top: 1%;
 }
@@ -769,7 +805,7 @@ hr{
 /* Go to cheatsheet button */
 
 .gotocheatsheetbutton{
-    background: #008B8B;
+    background: #007A7A;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -818,7 +854,7 @@ hr{
 }
 
 .cardquestion{
-    font-family: IBM Plex Sans500;
+    font-family: IBM Plex Sans400;
     font-style: normal;
     font-size: 32px;
     line-height: 42px;
@@ -849,7 +885,7 @@ hr{
     flex: 1;
 }
 
-#question1optionthreeimage{
+.question1optionthreeimage{
     margin-left: 2%;
     flex: 1;
 }
@@ -916,6 +952,10 @@ hr{
 }
 
 #effectname{
+    font-family: IBM Plex Sans600;
+}
+
+#effectname2{
     font-family: IBM Plex Sans600;
 }
 
@@ -990,7 +1030,7 @@ hr{
         margin-top: 3%;
     }
 
-    #question1optionthreeimage{
+    .question1optionthreeimage{
         margin-right: 0%;
         margin-left: 0%;
         margin-bottom: 3%;

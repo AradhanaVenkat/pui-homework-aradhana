@@ -4,7 +4,7 @@ function onAnswer1Click() {
 
     console.log("clicked answer 1");
 
-    var x = document.getElementById("answer1");
+    var x = document.getElementById("answer2");
     if (x.style.display === "flex") {
       x.style.display = "none";
     } else {
@@ -44,7 +44,7 @@ function onAnswer2Click(){
 // On click the third quiz option
 function onAnswer3Click(){
 
-    var x = document.getElementById("answer2");
+    var x = document.getElementById("answer1");
     if (x.style.display === "flex") {
       x.style.display = "none";
     } else {

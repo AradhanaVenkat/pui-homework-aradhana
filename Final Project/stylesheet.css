@@ -877,17 +877,20 @@ hr{
 #question1optiononeimage{
     margin-right: 2%;
     flex: 1;
+    cursor: pointer;
 }
 
 #question1optiontwoimage{
     margin-right: 2%;
     margin-left: 2%;
     flex: 1;
+    cursor: pointer;
 }
 
 .question1optionthreeimage{
     margin-left: 2%;
     flex: 1;
+    cursor: pointer;
 }
 
 /* Flipped Card */
@@ -1005,6 +1008,7 @@ hr{
     border-radius: 5px;
     width: 18%;
     margin-bottom: 4%;
+    cursor: pointer;
 }
 
 

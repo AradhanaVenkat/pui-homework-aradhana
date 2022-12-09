@@ -1,6 +1,6 @@
 // Pop up on confirmation bias card click
 function onConfirmationCardClick(){
-    var x = document.getElementById("confirmationbiasdetails");
+    let x = document.getElementById("confirmationbiasdetails");
     console.log(x.style.display);
     if (x.style.display == "block") {
       x.style.display = "none";
@@ -13,7 +13,7 @@ function onConfirmationCardClick(){
 
 // Closing pop up with confirmation bias details
 function onExitOneClick(){
-    var x = document.getElementById("confirmationbiasdetails");
+    let x = document.getElementById("confirmationbiasdetails");
     x.style.display = "none";
 }
 
@@ -21,7 +21,7 @@ function onExitOneClick(){
 
 // Pop up on decoy effect card click
 function onDecoyCardClick(){
-    var x = document.getElementById("decoyeffectdetails");
+    let x = document.getElementById("decoyeffectdetails");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
@@ -31,7 +31,7 @@ function onDecoyCardClick(){
 
 // Closing pop up with decoy effect details
 function onExitTwoClick(){
-    var x = document.getElementById("decoyeffectdetails");
+    let x = document.getElementById("decoyeffectdetails");
     x.style.display = "none";
 }
 
@@ -39,7 +39,7 @@ function onExitTwoClick(){
 
 // Pop up on anchoring effect card click
 function onAnchorCardClick(){
-    var x = document.getElementById("anchoringbiasdetails");
+    let x = document.getElementById("anchoringbiasdetails");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
@@ -49,7 +49,7 @@ function onAnchorCardClick(){
 
 // Closing pop up with confirmation bias details
 function onExitThreeClick(){
-    var x = document.getElementById("anchoringbiasdetails");
+    let x = document.getElementById("anchoringbiasdetails");
     x.style.display = "none";
 }
 

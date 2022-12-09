@@ -8,7 +8,7 @@ const options = {
         buttonColorDark: '#100f2c',  // default: '#100f2c'
         buttonColorLight: '#fff', // default: '#fff'
         saveInCookies: true, // default: true,
-        // label: '🌕', // default: 
+        label: '🌓', // Throws me an error on the WAVE tool but kept it here based on conversation with TA Napol 
         autoMatchOsTheme: true // default: true
 }
 
